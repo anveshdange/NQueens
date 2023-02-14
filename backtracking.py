@@ -43,7 +43,12 @@ def solveNQueens( n: int ) -> List[List[str]]:
     return res 
 
 if __name__ == "__main__": 
-    print("------------------------------------------------------------------------")
-    for i in range(14): 
-        print(f"{i} x {i} board possible solutions : {len(solveNQueens(i))}")
-    print("------------------------------------------------------------------------")
+    res = solveNQueens(8)
+    print(f"The Number of solutions are: {len(res)}")
+    print("----------HERE ARE ALL THE SOLUTIONS-----------")
+    for i in res :
+        print("----------------------------")
+        for j in i:
+            print(j)
+        print("----------------------------")
+        
